@@ -11,7 +11,7 @@ Yet Another OAuth Library
   #  s.screenshots  = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license      = 'MIT'
   s.author       = { "Taro Kobayashi" => "9re.3000@gmail.com" }
-  s.source       = { :git => "http://EXAMPLE/NAME.git", :tag => s.version.to_s }
+  s.source       = { :git => "https://github.com/9re/QROAuth.git", :tag => s.version.to_s }
 
   s.platform     = :ios, '6.0'
   # s.ios.deployment_target = '5.0'
