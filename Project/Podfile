@@ -1,0 +1,7 @@
+pod "QROAuth", :path => "../QROAuth.podspec"
+
+target "Demo" do
+end
+
+target "DemoTests" do
+end
