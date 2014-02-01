@@ -18,12 +18,12 @@ Yet Another OAuth Library
   # s.osx.deployment_target = '10.7'
   s.requires_arc = true
 
-  s.source_files = 'Classes'
+  s.source_files = 'Classes/**/*.m'
   s.resources = 'Assets'
 
   s.ios.exclude_files = 'Classes/osx'
   s.osx.exclude_files = 'Classes/ios'
-  # s.public_header_files = 'Classes/**/*.h'
+  s.public_header_files = 'Classes/**/*.h'
   # s.frameworks = 'SomeFramework', 'AnotherFramework'
-  # s.dependency 'JSONKit', '~> 1.4'
+  s.dependency 'AFNetworking', '~> 2.0'
 end
