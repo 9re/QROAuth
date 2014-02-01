@@ -16,6 +16,8 @@ DerivedData
 .idea/
 *.hmap
 *.lock
+.git.filter.credentials
+*.xccheckout
 
 #CocoaPods
 Pods

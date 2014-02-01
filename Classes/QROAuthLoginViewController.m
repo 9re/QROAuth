@@ -22,8 +22,8 @@
                  oaConsumer: (OAConsumer *) oaConsumer
 {
     self = [super
-            initWithNibName:NIB_NAME
-            bundle:[QRResourceUtil frameworkBundle]];
+            initWithNibName:nil
+            bundle:nil];
     if (self)
     {
         self.oauthProvider = oauthProvider;
