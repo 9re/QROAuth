@@ -18,7 +18,7 @@ Yet Another OAuth Library
   # s.osx.deployment_target = '10.7'
   s.requires_arc = true
 
-  s.source_files = ['Classes/**/*.m', 'Classes/**/*.c']
+  s.source_files = ['Classes/**/*.m', 'Classes/**/*.c', 'Classes/**/*.h']
   s.resources = ['Assets/**/*.xib']
 
   s.ios.exclude_files = 'Classes/osx'
