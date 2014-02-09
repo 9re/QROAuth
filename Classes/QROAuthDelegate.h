@@ -13,7 +13,7 @@
 @required
 - (void) onFetchedAccessToken:(NSString *) accessToken
             accessTokenSecret:(NSString *) accessTokenSecret;
-
+- (void) onFailure;
 @end
 
 #endif

@@ -56,8 +56,6 @@
     if ([@"true" isEqualToString:[params objectForKey:@"oauth_callback_confirmed"]])
     {
         NSString *oauth_token = [params objectForKey:@"oauth_token"];
-        NSString *oauth_token_secret = [params objectForKey:@"oauth_token_secret"];
-//        NSLog(@"oauth_token: %@ oauth_token_secret: %@", oauth_token, oauth_token_secret);
         [self.webView loadRequest:
          [NSURLRequest requestWithURL:
           [NSURL URLWithString:
@@ -116,7 +114,18 @@ shouldStartLoadWithRequest:(NSURLRequest *)request
 
 - (IBAction)onCancelClicked:(id)sender
 {
-    [self dismissViewControllerAnimated:YES completion:nil];
+    [self dismiss];
+}
+
+- (void)dismiss
+{
+    __weak id theDelegate = self.delegate;
+    [self dismissViewControllerAnimated:YES completion:^{
+        if (theDelegate)
+        {
+            [theDelegate onFailure];
+        }
+    }];
 }
 
 @end
