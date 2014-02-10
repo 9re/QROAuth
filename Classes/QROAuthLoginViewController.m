@@ -96,16 +96,6 @@ shouldStartLoadWithRequest:(NSURLRequest *)request
     return YES;
 }
 
-- (void)webViewDidFinishLoad:(UIWebView *)webView
-{
-    NSLog(@"webViewDidFinishLoad");
-}
-
-- (void)webViewDidStartLoad:(UIWebView *)webView
-{
-    NSLog(@"webViewDidStartLoad");
-}
-
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -115,6 +105,13 @@ shouldStartLoadWithRequest:(NSURLRequest *)request
 - (IBAction)onCancelClicked:(id)sender
 {
     [self dismiss];
+}
+
+- (void)viewDidDisappear:(BOOL)animated
+{
+    self.delegate = nil;
+    self.oaConsumer = nil;
+    self.oauthProvider = nil;
 }
 
 - (void)dismiss
