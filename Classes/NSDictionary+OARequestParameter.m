@@ -10,7 +10,7 @@
 #import "NSDictionary+OARequestParameter.h"
 
 @implementation NSDictionary (OAParameter)
-- (NSArray*) cast
+- (NSArray*) castAsOAParameters
 {
     NSMutableArray *array = [[NSMutableArray alloc] initWithCapacity: [self count]];
     

@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface NSDictionary (OAParameter)
-- (NSArray*) cast;
+- (NSArray*) castAsOAParameters;
 @end
