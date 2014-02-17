@@ -76,7 +76,7 @@
                            signatureProvider:nil];
     [request setHTTPMethod:@"POST"];
     [request setParameters:
-     [@{@"oauth_verifier":verifier} cast]];
+     [@{@"oauth_verifier":verifier} castAsOAParameters]];
     [request prepare];
     
     AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc] initWithRequest:request];
